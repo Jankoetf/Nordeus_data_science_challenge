@@ -1,2 +1,3 @@
 # Nordeus_data_science_challenge
-Top_evelen
+
+Note: my dataset: jobfair_test.csv is sorted by 'league_id'
