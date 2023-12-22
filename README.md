@@ -44,17 +44,29 @@ After analysing corelations between features we get that two feature must be exc
 
 - Feature Engeeniring
 
-Because every feature have strong connection with league_id and predictions should have meaningfull order in the same league, feature engeeniring consist of averaging every feature by league average, and also droping old features except league_id and club_id.
+Because every feature have strong connection with league_id and predictions should have meaningfull order in the same league, feature engeeniring consist of averaging every feature by league average, and also droping old features except league_id and club_id. [Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
 
-[Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
+# 3. 4. Neural networks, Regressional models
 
-# 3. Regressional models
+- Split
 
+I did splitting into train, val, test set both with train_test_split function and manualy leaving grouped property of clubs in the same league, for easier post processing later. [Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
 
-# 4. Neural networks
+- Hyperparameter tunning
+
+Im using two step tunning aproach - hyperparameters tuning is splited into tuning of architecture parameters and tunning of regularization hyperparameters.
+
+- Post-procesing
+
+We see that every model predict conservatevly around 7.5 when it is unsertain.
+
+<img src="Screeens/conservative.PNG" alt="Alt Text" width="312" height="256">
+
+In order to transform predictions in meaningfull values I tried different post_processing functions, the simplest one has shown best performance(just rounding predictions in range 1, 14).
 
 # 5. Generating results
 
+Because I find models works best with custom split and post processing functions, I had to change order of columns in my original dataset, so I generated results sorted by club_id for easier testing
 
 ## **Thank you for exploring my project!** 
 If you'd like to learn more about my background and qualifications, please visit my [LinkedIn profile](https://www.linkedin.com/in/your-profile)
