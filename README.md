@@ -31,6 +31,7 @@ Highest possible MAE is 7, if we generate predictions randomly it is oround 4.63
 
 
 # 2. Feature_engineering
+[Feature_engeeniring.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Top_eleven_Feature_Ingineering.ipynb)
 - Corelation analysis
 <img src="Screeens/corelation.PNG" alt="Alt Text" width="428" height="256">
 
