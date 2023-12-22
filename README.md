@@ -73,7 +73,7 @@ In order to transform predictions in meaningfull values I tried different post_p
 I choosed best neural network to generate results.
 
 - **Resulting dataset**
-
+[results.csv](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/league_rank_predictions.csv)
 
 ## **Thank you for exploring my project!** 
 If you'd like to learn more about my background and qualifications, please visit my [LinkedIn profile](https://www.linkedin.com/in/your-profile)
