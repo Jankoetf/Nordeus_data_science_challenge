@@ -2,7 +2,12 @@
 
 Note: my dataset, league_rank_predictions.csv is sorted by 'club_id'
 
-# 1. Data analysis - preprocessing
+# Copy of package
+
+I wanted to run multiple nootebooks at the same time and in order to avoid repeating code, I created github gist where I had all of functions I want to reuse often in different notebooks. This gist is named package and this notebook copy_of_package is actually just copy of that package.
+[Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
+
+# 1. Data analysis - preprocessing - results simulation
 - Data analysis:
   
 This is all about understanding features, what they represent. These are worthy of attention:
@@ -16,34 +21,39 @@ This is all about understanding features, what they represent. These are worthy 
 
 - Preprocessing
 
-I made two different preprocessing functions, one using both categorical features, one without them
+I made two different preprocessing functions, one using both categorical features, one without them, you can see all functions in: 
+[Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
+
+- Results simulation
+
+Highest possible MAE is 7, if we generate predictions randomly it is oround 4.63, and if we generate for all predictions 7.5 we get 3.5 for MAE.
 
 
+# 2. Feature_engineering
+- Corelation analysis
+<img src="Screeens/corelation.PNG" alt="Alt Text" width="428" height="256">
 
-## Essentials
-- implementing **alpha-beta-pruning** algorithm on game tree, for the purpose of finding best move for ai player on every move
-- implementing search on game tree in the purpose of funding **valid moves** for every move in the game
+- Feature importance:
 
-## Main Game features
-1. Two player game - classic
-2. Ai vs player
+From many different models we get that playtime_last_28_days is most important feature.
+<img src="Screeens/importance.PNG" alt="Alt Text" width="512" height="256">
 
-<img src="Screens_6_11_23/Start.PNG" alt="Alt Text" width="256" height="256"> <img src="Screens_6_11_23/Game.PNG" alt="Alt Text" width="256" height="256">
+- Feature Selection: 
 
-## Main APP features
-1. Undoing a move on rigth click, reseting game
-2. Menu - player can choose between normal game or player vs ai, and color agains ai
-3. Showing controling squares in game
+After analysing corelations between features we get that two feature must be excluded from dataset, these are cohort_season because high corealtion with club_id(and club_id is required for submition), average_stars_top_14_players because of high corelation with average_stars_top_11_players(average_stars_top_11_players have higher importance)
 
-<img src="Screens_6_11_23/ControlSquares.PNG" alt="Alt Text" width="256" height="256"><img src="Screens_6_11_23/Menu.PNG" alt="Alt Text" width="256" height="256"> 
+- Feature Engeeniring
+Because every feature have strong connection with league_id and predictions should have meaningfull order in the same league, feature engeeniring consist of averaging every feature by league average, and also droping old features except league_id and club_id.
+
+[Copy_of_package.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Copy_of_Package.ipynb)
+
+# 3. Regressional models
 
 
-## Other features
-1. Meni icons - when player clicks outside of game board, menu icons show up
-2. Check mate animation
-3. Changing board stile and menu background picture
+# 4. Neural networks
 
- <img src="Screens_6_11_23/Mate.PNG" alt="Alt Text" width="256" height="256"><img src="Screens_6_11_23/matew.PNG" alt="Alt Text" width="256" height="256"> 
+# 5. Generating results
+
 
 ## **Thank you for exploring my project!** 
 If you'd like to learn more about my background and qualifications, please visit my [LinkedIn profile](https://www.linkedin.com/in/your-profile)
