@@ -66,7 +66,7 @@ In order to transform predictions in meaningfull values I tried different post_p
 
 # 5. Generating results
 
-Because I find models works best with custom split and post processing functions, I had to change order of columns in my original dataset, so I generated results sorted by club_id for easier testing
+I choosed best neural network to generate results.
 
 ## **Thank you for exploring my project!** 
 If you'd like to learn more about my background and qualifications, please visit my [LinkedIn profile](https://www.linkedin.com/in/your-profile)
