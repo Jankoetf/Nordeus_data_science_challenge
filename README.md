@@ -72,5 +72,8 @@ In order to transform predictions in meaningfull values I tried different post_p
 [Generating_results.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Top_eleven_generating_results.ipynb)
 I choosed best neural network to generate results.
 
+- **Resulting dataset**
+
+
 ## **Thank you for exploring my project!** 
 If you'd like to learn more about my background and qualifications, please visit my [LinkedIn profile](https://www.linkedin.com/in/your-profile)
