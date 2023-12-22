@@ -5,7 +5,19 @@ Note: my dataset, league_rank_predictions.csv is sorted by 'club_id'
 # 1. Data analysis - preprocessing
 - Data analysis:
   
-This is all about understanding features, what they represent, 
+This is all about understanding features, what they represent. These are worthy of attention:
+**league_id**: this is not just random generated id, but actually very important feature, it turns out that the bigger this league_id is the better that league_is - clubs in this league are better, we can see that by many corelations like:
+
+<img src="Screeens/global.PNG" alt="Alt Text" width="312" height="256"> <img src="Screeens/payment.PNG" alt="Alt Text" width="312" height="256">
+
+**club_id** again not just random generated number, but actually this id is generated in order, the bigger this id is that club created later
+
+<img src="Screeens/club.PNG" alt="Alt Text" width="256" height="376">
+
+- Preprocessing
+
+I made two different preprocessing functions, one using both categorical features, one without them
+
 
 
 ## Essentials
