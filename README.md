@@ -69,7 +69,7 @@ We see that every model predict conservatevly around 7.5 when it is unsertain.
 In order to transform predictions in meaningfull values I tried different post_processing functions, the simplest one has shown best performance(just rounding predictions in range 1, 14).
 
 # 5. Generating results
-
+[Generating_results.ipnb](https://github.com/Jankoetf/Nordeus_data_science_challenge/blob/main/Top_eleven_generating_results.ipynb)
 I choosed best neural network to generate results.
 
 ## **Thank you for exploring my project!** 
