@@ -1,6 +1,3 @@
-# Submition
-
-Note: my dataset, league_rank_predictions.csv is sorted by 'club_id'
 
 # Copy of package
 
